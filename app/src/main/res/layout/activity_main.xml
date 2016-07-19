@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearlayoutmain"
+        android:orientation="vertical"
+        android:background="@drawable/backgroundmain"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:weightSum="1">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="0,1">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imgLocation"
+                    android:layout_weight="1"
+                    android:layout_column="0"
+                    android:background="@null"
+                    android:src="@drawable/mapsmain"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imgPlayer"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:background="@null"
+                    android:src="@drawable/musicplayermain"
+                    android:onClick="goToMusic"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imgCamera"
+                    android:layout_weight="1"
+                    android:layout_column="0"
+                    android:background="@null"
+                    android:src="@drawable/cameramain"
+                    android:onClick="goToCamera"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imgContacts"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:background="@null"
+                    android:src="@drawable/contactsmain"
+                    android:onClick="goToEmergencyNumber"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imgAboutUs"
+                    android:layout_weight="1"
+                    android:layout_column="0"
+                    android:background="@null"
+                    android:src="@drawable/aboutusmain"
+                    android:onClick="goToDynamics"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/imgSettings"
+                    android:layout_weight="1"
+                    android:layout_column="1"
+                    android:background="@null"
+                    android:src="@drawable/settingsmain"
+                    android:onClick="goToSetting"/>
+
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
